@@ -16,7 +16,19 @@
 <body>
 	<div class="left-bar">
 		<h3>Assignment</h3>
-		<?php include('sidebar.php'); ?>
+		<ul>
+			<li><a href="index.html">One</a></li>
+			<li><a href="two.html">Two</a></li>
+			<li><a href="three.html">Three</a></li>
+			<li><a href="four.html">Four</a></li>
+			<li><a href="five.html">Five</a></li>
+			<li><a href="six.html">Six</a></li>
+			<li><a href="seven.html">Seven</a></li>
+			<li><a href="eight.html">Eight</a></li>
+			<li><a href="nine-switch.html">Nine</a></li>
+			<li><a href="nine-if.html">Ten</a></li>
+			<li><a href="ten.html">Eleven</a></li>
+		</ul>
 	</div>
 	<div class="right-bar">
 		<h3>Output</h3>
@@ -35,19 +47,17 @@
 		function checkAge(){
 		var age = document.getElementById('age').value;
 		if(age == ""){
-			document.getElementById('age').style.borderColor = 'red';
-			errorMsg("Please Enter your Age");
+			errorMsg("Please Enter your Age","red");
 		}else if(age >= 18){
-			errorMsg("Your are Not Teenager");
-			document.getElementById("errmsg").style.color = 'green';
+			errorMsg("Your are Not Teenager","green");
 		}else{
-			errorMsg("Your are Teenager");
+			errorMsg("Your are Teenager","red");
 		}
 		document.getElementById('age').value = "";
 	}
-	function errorMsg(text){
+	function errorMsg(text,color){
 		document.getElementById("errmsg").innerHTML = text;
-		document.getElementById("errmsg").style.color = 'red';
+		document.getElementById("errmsg").style.color = color;
 	}
 	</script>
 </body>
