@@ -1,0 +1,21 @@
+WAF to multi 2/multiple numbers. (use function parameters/arguments)
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var multiply = function(a,b,c) {
+		var num = 1;
+		for (var i = 0; i < arguments.length; i++) {
+			num *= arguments[i];
+		}
+		return num;	
+	}
+	console.log(multiply('10','5','2'))
+</script>
+</body>
+</html>

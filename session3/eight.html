@@ -1,0 +1,35 @@
+Today function example
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="getToday();">
+<p id="msg"></p>
+<script type="text/javascript">
+		function getToday(){			
+			var day = new Date();
+			var today = day.getDay();
+			
+			if(today == 0){
+				displayMsg("Whats your plan for Sunday");
+			}else if(today == 1){
+				displayMsg("Today is Monday get back to Work");
+			}else if(today == 2){
+				displayMsg("Today is Tuesday");
+			}else if(today == 3){
+				displayMsg("Today is Wednesday");
+			}else if(today == 4){
+				displayMsg("Today is Thursday");
+			}else if(today == 5){
+				displayMsg("Today is Friday");
+			}else{
+				displayMsg("Thank God its Saturday");
+			}
+		}
+		function displayMsg(text){
+			document.getElementById("msg").innerHTML = text;
+		}
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+Function for checking you are adult or not
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<form action="#">
+		<input type="number" id="age">
+		<button type="button" onclick="checkAge()">Submit</button>
+		<div id="errmsg"></div>
+	</form>
+<script type="text/javascript">
+		function checkAge(){
+		var age = document.getElementById('age').value;
+		if(age == ""){
+			errorMsg("Please Enter your Age","red");
+		}else if(age >= 18){
+			errorMsg("Your are Adult","green");
+		}else{
+			errorMsg("Your are not Adult","red");
+		}
+		document.getElementById('age').value = "";
+	}
+	function errorMsg(text,color){
+		document.getElementById("errmsg").innerHTML = text;
+		document.getElementById("errmsg").style.color = color;
+	}
+	</script>
+</body>
+</html>

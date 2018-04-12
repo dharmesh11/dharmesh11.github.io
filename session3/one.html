@@ -1,0 +1,41 @@
+What is the difference between following 2 functions if any? 
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm('Did parents allow you?');
+  }
+}
+
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  }
+ return confirm('Did parents allow you?');
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignments</title>
+</head>
+<body onload="checkAge();">
+
+<script type="text/javascript">
+function checkAge(age) {
+  if (age > 18) {
+    //console.log('yes');
+	return true;
+  } else {
+    return confirm('Did parents allow you????????????');
+  }
+}
+
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  }
+return confirm('Did parents allow you?'); // 
+}	
+</script>
+</body>
+</html>

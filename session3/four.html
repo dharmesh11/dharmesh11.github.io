@@ -1,0 +1,38 @@
+WAF to find prime numbers from 1-100
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<br>
+<input type="number" name="" id="number">
+<button id="Submit" >Submit</button>
+<div id="ans"></div>
+<script type="text/javascript">
+
+
+
+	document.getElementById('Submit').addEventListener("click", isPrime);
+
+		function isPrime(){
+		var num = document.getElementById('number').value;
+		var val = 0;
+
+            for (i = 1; i <= num; i++) {
+                if (num % i == 0) {
+                    val += 1;
+                }
+            }
+
+            if (val == 2) {
+                document.getElementById('ans').innerHTML ='It is a Prime number';
+            }else{
+                document.getElementById('ans').innerHTML = 'It is NOT a Prime number';
+            }
+		}
+
+
+</script>
+</body>
+</html>

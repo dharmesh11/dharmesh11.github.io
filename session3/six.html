@@ -1,0 +1,20 @@
+ Demonstrate difference between function declaration and expression
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="myfunction1(), myfunction2()">
+
+<script type="text/javascript">
+	function myfunction1() { 
+	    console.log('It is function declaration');
+	}
+
+	var myfunction2 = function() {
+	    console.log('it is function expression');
+	}
+</script>
+</body>
+</html>

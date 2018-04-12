@@ -1,0 +1,40 @@
+Function for above number 3
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+</head>
+</style>
+<body onload="number()">
+	
+	<script type="text/javascript">
+	function number(){
+		var a = prompt('Enter value of a', '');
+		var checkNumber = /^[0-9]*$/;
+		if (checkNumber.test(a)){
+			switch(true){
+			 	case (a == ""):
+			 	alert("Please Enter a number");
+			 	break;
+			 	case (a == 0):
+			 	alert("Your Number 0");
+			 	break;
+			 	case (a == 1):
+			 	alert("Your Number 1");
+			 	break;
+			 	case (a == 2):
+			 	alert("Number is 2");
+			 	break;
+			 	case (a == 3):
+			 	alert("Number is 3");
+			 	break;
+			 	default:
+			 	alert("Number is above 3");
+			}
+		}else{
+		    alert("Your input is Not a number");
+		}
+	}
+	</script>
+</body>
+</html>
