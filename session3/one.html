@@ -18,19 +18,18 @@ function checkAge(age) {
 <head>
 	<title>Assignments</title>
 </head>
-<body onload="checkAge();">
+<body onload="checkAge(), checkAge2()">
 
 <script type="text/javascript">
-function checkAge(age) {
+function checkAge(age) { // confirm box will work in else condition
   if (age > 18) {
-    //console.log('yes');
 	return true;
   } else {
     return confirm('Did parents allow you????????????');
   }
 }
 
-function checkAge(age) {
+function checkAge2(age) { // when function is called confirm box will work
   if (age > 18) {
     return true;
   }
