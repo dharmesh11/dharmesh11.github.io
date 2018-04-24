@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome</title>
+</head>
+<body>
+	<form>
+		<input type="text" name="">
+		<button id="submit">Submit</button>
+	</form>
+	<p id="msg"></p>
+<script type="text/javascript">
+	var id = document.getElementById('submit');
+	id.addEventListener("click",checkPalindrome);
+
+	function checkPalindrome() {
+		var name = document.getElementsByTagName('input')[0].value;
+		var ans = name.split("").reverse();
+
+		 var val = ans.join("");
+		 if (val == name) {
+		 	errorMsg("This is Palindrome","green");
+		 }else{
+		 	errorMsg("This is Not Palindrome","red");
+		 }
+	}
+	function errorMsg(msg,color){
+		document.getElementById("msg").innerHTML = msg;
+		document.getElementById("msg").style.color = color;
+	}
+</script>
+</body>
+</html>
+
+<!-- n i t i n -->

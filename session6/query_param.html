@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var url = 'https://www.google.co.in/search?ei=2d3eWvutPIb9vgTyoqTgDA&q=avengers+2017&oq=avengers&gs_l=psy-ab.1.7.0i71k1l8.0.0.0.424676.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.GZ-EdTDrb3g';
+
+	function getParam(url) {
+		var q = url.split('?');
+		//console.log(q[1]);
+		var qString = q[1];
+
+		var params =qString.split('&');
+		return params; 
+	}
+	var ans = getParam(url);
+	console.log(ans);
+</script>
+</body>
+</html>

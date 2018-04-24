@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{margin: 0;padding: 0}
+		header{background-color: skyblue;height: 40px;position: relative;top: 200px;}
+		ul{overflow: hidden;text-align: center;}
+		ul li{margin: 0 20px 0 0;display: inline-block;}
+		ul li a{color: #333;font-size: 16px;height: 40px;line-height: 40px;font-family: arial;}
+		.container{height: 2000px}
+		.fixed-menu header{position: fixed;top:0;width: 100%;}
+	</style>
+</head>
+<body>
+<header id="header">
+	<nav>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">About Us</a></li>
+			<li><a href="">Gallery</a></li>
+			<li><a href="">Contact Us</a></li>
+		</ul>
+	</nav>
+</header>
+<div class="container"></div>
+<script type="text/javascript">
+	var nav = document.querySelector('#header'); //get header tag
+	var topVal = nav.offsetTop; // using this find distance from top
+	//console.log(topVal);
+
+	window.addEventListener('scroll', function() {
+		if (window.scrollY >= topVal) { //match top value and scroll value
+		    document.body.classList.add('fixed-menu'); // if its ture add class in body
+		  } else {
+		    document.body.classList.remove('fixed-menu'); // if not remove class from body
+		  }
+	});
+</script>
+</body>
+</html>
