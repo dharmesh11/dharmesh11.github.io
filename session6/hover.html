@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<input type="checkbox" class="menu-trigger" checked="checked">
+	<ul class="menu" role="menu">
+		<li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" id="level1">
+			<a href="#">Level 1</a>
+			<ul>
+				<li><a href="#" id="level2">Level 2</a></li>
+				<li><a href="#">Level 2</a></li>
+				<li><a href="#">Level 2</a></li>
+			</ul>
+		</li>
+		<li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+			<a href="#">Level 1</a>
+			<ul>
+				<li><a href="#" id="level2">Level 2</a></li>
+				<li><a href="#">Level 2</a></li>
+				<li><a href="#">Level 2</a></li>
+			</ul>
+		</li>
+		<li onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+			<a href="#">Level 1</a>
+			<ul>
+				<li><a href="#" id="level2">Level 2</a></li>
+				<li><a href="#">Level 2</a></li>
+				<li><a href="#">Level 2</a></li>
+			</ul>
+		</li>
+	</ul>
+	<script type="text/javascript">
+		
+		function mouseOver(event) {
+			var tagAttr = event.children[1];
+			tagAttr.style.visibility = 'visible';
+		}
+		function mouseOut(event){
+			var tagAttr = event.children[1];
+			tagAttr.style.visibility = 'hidden';
+		}
+	</script>
+</body>
+</html>
