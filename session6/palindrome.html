@@ -15,6 +15,9 @@
 
 	function checkPalindrome() {
 		var name = document.getElementsByTagName('input')[0].value;
+	
+		//console.log(type);
+		if (name  != '') {
 		var ans = name.split("").reverse();
 
 		 var val = ans.join("");
@@ -23,6 +26,9 @@
 		 }else{
 		 	errorMsg("This is Not Palindrome","red");
 		 }
+		}else{
+			return false;
+		}
 	}
 	function errorMsg(msg,color){
 		document.getElementById("msg").innerHTML = msg;
