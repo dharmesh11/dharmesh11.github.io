@@ -19,15 +19,15 @@
 		//console.log(type);
 		if (name  != '') {
 		var ans = name.split("").reverse();
-
-		 var val = ans.join("");
+		console.log(ans);
+		 var val = ans.join(""); // conver array into string
 		 if (val == name) {
 		 	errorMsg("This is Palindrome","green");
 		 }else{
 		 	errorMsg("This is Not Palindrome","red");
 		 }
 		}else{
-			return false;
+			errorMsg("Please Enter SOmething","red")
 		}
 	}
 	function errorMsg(msg,color){

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CRUD</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>CRUD</header>
+	<aside>
+		<form action="javascript:void(0);" >
+			<label>Name</label>
+			<input type="text" name="" id="name">
+			<label>Age</label>
+			<input type="number" name="" id="age">
+		     <label id="err-msg"></label>			
+			<input type="submit" name="" value="submit" id="submit-btn" onclick="saveData();">
+		</form>
+	</aside>
+	<div class="container">
+			<table class='striped'>
+				<thead>
+					<tr><th>Name</th><th>Age</th><th>Gender</th></tr>
+				</thead>
+			<tbody id="data-table">
+				
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

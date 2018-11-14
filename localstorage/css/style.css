@@ -1,0 +1,8 @@
+*{margin: 0;padding: 0;box-sizing: border-box;word-wrap: break-word;font-family: arial,sans-serif}
+header{padding: 20px 0;font-size: 30px;color: #fff;background-color: #888;text-align-last: center;}
+aside{position: fixed;top: 50px;width: 288px;height: 100%;letter-spacing: 0;padding: 50px 20px;border-right: 1px solid #888;}
+aside label{width: 100%;margin: 10px 0;display: block;}
+aside input{width: 100%;padding: 5px 10px;}
+aside button{background-color: #70badb; border: none; padding: 5px 10px; margin-top: 15px; cursor: pointer;color: #fff;}
+.container{border: 1px solid #ccc;width: 960px;border-left: 0;}
+#err-msg{display: none;color: red;font-size: 14px;}
